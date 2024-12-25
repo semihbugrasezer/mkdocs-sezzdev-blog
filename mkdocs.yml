@@ -3,6 +3,7 @@ site_description: A blogging site built with Material for MkDocs.
 site_url: https://example.com/
 theme:
   name: material
+  custom_dir: overrides
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -44,7 +45,19 @@ plugins:
       pretty_print: true
       date_from_meta:
         as_creation: date.created
-        as_update: date.updated   
+        as_update: date.updated  
+
+  - git-committers:
+      enabled: true
+      repository: semihbugrasezer/mkdocs-semsezz-blog
+      brach: main
+      token: ${GH_TOKEN}
+
+  - git-revision-date-localized:
+       type: date
+       fallback_to_build_date: false
+       enable_creation_date: true
+       enabled: true
 
 extra:
   social:
