@@ -1,4 +1,4 @@
-site_name: sezz.dev
+site_name: Sezz's Dev Universe
 site_description: Personal blog of Semih Buğra Sezer
 site_url: https://sezz.dev
 site_author: Semih Buğra Sezer
@@ -33,14 +33,14 @@ theme:
       primary: teal
       accent: deep orange
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: teal
       accent: deep orange
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
   font:
     text: Roboto
